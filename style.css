@@ -87,14 +87,14 @@ i {
 
 .bg-home::before {
   content: "";
-  display: block;
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(../assets/bg.svg);
+  background: linear-gradient(to bottom, rgba(21, 99, 177, 0.1), #06121e), url(../assets/bg.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -198,6 +198,42 @@ i {
     margin: 2px 30px;
   }
 }
+.services {
+  background-color: #fff;
+  color: #161617;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.services-content h2 {
+  text-align: center;
+  color: #161617;
+  font-size: 50px;
+  font-weight: bold;
+}
+.services-content p {
+  text-align: center;
+  color: #161617;
+  max-width: 836px;
+  line-height: 150%;
+  margin-bottom: 50px;
+}
+
+.haircuts {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.haircut-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
 body {
   font-family: "sora", sans-serif;
   width: 100%;

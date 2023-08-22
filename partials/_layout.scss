@@ -10,14 +10,14 @@
 
 .bg-home::before{
     content: '';
-    display: block;
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(to bottom , rgba(6,18,30,0.1), #06121e), url(../assets/bg.svg);
+    background: linear-gradient(to bottom , rgba(21, 99, 177, 0.1), #06121e), url(../assets/bg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +27,6 @@
 .hero{
     color: $white-normal;
     min-height: 80vh;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +39,7 @@
       max-width: 940px;
       font-size: 43px;
     }
-    
+
     p{
       text-align: center;
       margin: 14px 0;
@@ -136,6 +135,48 @@
 
   
 }
+
+// SERVICES
+
+.services{
+  background-color: $white-normal;
+  color: $black-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.services-content{
+   h2{
+    text-align: center;
+    color: $black-dark;
+    font-size: 50px;
+    font-weight: bold;
+   }
+   p{
+    text-align: center;
+    color: $black-dark;
+    max-width: 836px;
+    line-height: 150%;
+    margin-bottom: 50px;
+   }
+}
+.haircuts{
+  display:flex ;
+  flex: 1;
+  gap: 20px;
+}
+
+.haircut-info{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+
+
 
 
 
