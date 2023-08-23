@@ -278,6 +278,9 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+  .services h2 {
+    font-size: 35px;
+  }
   .haircuts {
     flex-direction: column;
   }
@@ -305,6 +308,43 @@ i {
     text-align: center;
     font-size: 14px;
     max-width: 300px;
+  }
+}
+.btn-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+}
+.btn-whatsapp img {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+}
+.btn-whatsapp span {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -140px;
+  background-color: #232224;
+  color: rgb(144, 235, 192);
+  border-radius: 8px;
+  padding: 5px 12px;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-whatsapp img {
+    max-width: 64px;
   }
 }
 body {
