@@ -207,6 +207,12 @@ i {
   justify-content: center;
   padding: 54px 14px;
 }
+.services h2 {
+  font-family: "sora";
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
 
 .services-content h2 {
   text-align: center;
@@ -224,6 +230,7 @@ i {
 }
 
 .haircuts {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,8 +249,8 @@ i {
 }
 .haircut img {
   width: 100%;
-  max-width: 354px;
-  transition: transform 0.5s;
+  max-width: 554px;
+  transition: transform 0.8s;
 }
 
 .haircut img:hover {
@@ -258,7 +265,7 @@ i {
   justify-content: space-between;
   padding: 14px;
   background-color: #fff;
-  z-index: 99;
+  z-index: 2;
 }
 .haircut-info button {
   font-weight: bold;
@@ -266,12 +273,38 @@ i {
   background-color: #d94140;
   border: #d94140;
   border-radius: 5px;
-  padding: 7px 12px;
+  padding: 12px 22px;
+  cursor: default;
 }
 
 @media screen and (max-width: 768px) {
   .haircuts {
     flex-direction: column;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #06121e;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 70px;
+  color: #fff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 22px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .footer strong {
+    text-align: center;
+    font-size: 14px;
+    max-width: 300px;
   }
 }
 body {

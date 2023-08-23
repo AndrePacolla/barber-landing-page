@@ -144,6 +144,13 @@
   align-items: center;
   justify-content: center;
   padding: 54px 14px;
+
+  h2 {
+    font-family: "sora";
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .services-content {
@@ -163,6 +170,7 @@
   }
 }
 .haircuts {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,8 +189,8 @@
 
   img {
     width: 100%;
-    max-width: 354px;
-    transition: transform 0.5s;
+    max-width: 554px;
+    transition: transform 0.8s;
   }
 }
 .haircut img:hover {
@@ -190,14 +198,14 @@
   z-index: 1;
 }
 
-.haircut-info{
+.haircut-info {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 14px;
   background-color: $white-normal;
-  z-index: 99;
+  z-index: 2;
 
   button {
     font-weight: bold;
@@ -205,14 +213,43 @@
     background-color: $red-normal;
     border: $red-normal;
     border-radius: 5px;
-    padding: 7px 12px;
+    padding: 12px 22px;
+    cursor: default;
   }
 }
 
-@media screen and (max-width:768px) {
-  .haircuts{
+@media screen and (max-width: 768px) {
+  .haircuts {
     flex-direction: column;
+  }
+}
+// FOOTER .....
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $primary-normal;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 70px ;
+  color: $white-normal;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 22px;
+  color: $white-normal;
+}
+
+@media screen and (max-width:768px) {
+  .footer{
+    strong{
+      text-align: center;
+      font-size: 14px;
+      max-width: 300px;
+    }
   }
 
   
