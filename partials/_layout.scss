@@ -248,6 +248,11 @@
   color: $white-normal;
 }
 
+.footer-icons i:hover{
+  color: $red-normal;
+  transition: color 1s
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     strong {

@@ -303,6 +303,11 @@ i {
   color: #fff;
 }
 
+.footer-icons i:hover {
+  color: #d94140;
+  transition: color 1s;
+}
+
 @media screen and (max-width: 768px) {
   .footer strong {
     text-align: center;
